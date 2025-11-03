@@ -5,80 +5,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
-<meta name="description" content="Nexus Projekt – SCP:RP Community mit Ambition. Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
+<meta name="description" content="Nexus Projekt – SCP:RP mit Ambition. Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
 <meta property="og:title" content="Nexus Projekt">
 <meta property="og:description" content="Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
-<meta property="og:image" content="assets/img/logo_primary.png">
-<link rel="icon" href="assets/img/logo_x.png" type="image/png">
+<meta property="og:image" content="assets/img/logo_wordmark_white.png">
+<link rel="icon" href="assets/img/logo_x_orange.png" type="image/png">
 <link rel="preload" href="assets/fonts/Nexus-Font.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 <script defer src="assets/js/app.js"></script>
 
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="index.html" aria-label="Nexus Projekt Home">
-    <img src="assets/img/logo_primary.png" alt="Nexus Projekt Logo">
-  </a>
-  <button class="nav-toggle" aria-label="Navigation umschalten">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">Über uns</a>
-    <a href="projects.html">Projekte</a>
-    <a href="community.html">Community</a>
-    <a href="apply.html">Bewerben</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
+<div class="bg grid"></div>
+<div class="bg scan"></div>
+<header class="shell hdr">
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Start">
+      <img src="assets/img/logo_wordmark_x_white.png" alt="NEXUS" height="20">
+    </a>
+    <button class="nav-toggle" aria-label="Navigation umschalten"><span></span><span></span><span></span></button>
+    <nav class="menu" aria-label="Hauptnavigation">
+      <a href="about.html">Über</a>
+      <a href="projects.html">Projekte</a>
+      <a href="community.html">Community</a>
+      <a href="apply.html">Bewerben</a>
+      <a class="pill" href="contact.html">Kontakt</a>
+    </nav>
+  </div>
 </header>
 
-<main class="page-hero">
+<main class="page shell">
   <h1>Bewerben</h1>
-  <p>Hilf uns, Garrysmod neu zu definieren.</p>
+  <form class="form panel" name="application" method="post" data-netlify="true">
+  <input type="hidden" name="form-name" value="application">
+  <label>Name
+    <input required name="name" placeholder="Storm">
+  </label>
+  <label>Rolle
+    <select name="role">
+      <option>Mapping</option>
+      <option>Lua / Scripting</option>
+      <option>Moderation</option>
+      <option>3D / Art</option>
+      <option>Community</option>
+    </select>
+  </label>
+  <label>Dein Beitrag
+    <textarea name="message" rows="5" placeholder="Wobei möchtest du helfen?"></textarea>
+  </label>
+  <button class="btn primary" type="submit">Bewerbung senden</button>
+</form>
+
 </main>
-<section class="container">
-  <form class="form" name="application" method="post" data-netlify="true">
-    <input type="hidden" name="form-name" value="application">
-    <label>Dein Name
-      <input required name="name" placeholder="Storm">
-    </label>
-    <label>Rolle
-      <select name="role">
-        <option>Mapping</option>
-        <option>Lua / Scripting</option>
-        <option>Moderation</option>
-        <option>3D / Art</option>
-        <option>Community</option>
-      </select>
-    </label>
-    <label>Dein Beitrag
-      <textarea name="message" rows="5" placeholder="Wobei möchtest du helfen?"></textarea>
-    </label>
-    <button class="btn btn-primary" type="submit">Bewerbung senden</button>
-  </form>
-</section>
-<footer class="site-footer">
-  <div class="grid">
-    <div>
-      <h4>Nexus Projekt</h4>
-      <p>Wir bauen nicht nur Welten, wir definieren ihre Regeln.</p>
-    </div>
-    <div>
-      <h4>Links</h4>
-      <ul>
-        <li><a href="privacy.html">Datenschutz</a></li>
-        <li><a href="imprint.html">Impressum</a></li>
-        <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
-        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Kontakt</h4>
-      <p>E-Mail: team@nexus-projekt.dev</p>
-    </div>
+<footer class="footer">
+  <div class="shell fgrid">
+    <p>© <span id="year"></span> Nexus Projekt</p>
+    <p><a href="privacy.html">Datenschutz</a> · <a href="imprint.html">Impressum</a></p>
+    <p><a href="https://discord.com" target="_blank" rel="noopener">Discord</a> · <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
   </div>
-  <p class="copy">© <span id="year"></span> Nexus Projekt — Alle Rechte vorbehalten.</p>
 </footer>
 
 </body>

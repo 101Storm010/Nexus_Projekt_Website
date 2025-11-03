@@ -1,26 +1,23 @@
-const yearEl = document.getElementById('year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.site-nav');
-if (toggle && nav) {
-  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+// Year
+const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+// Menu
+const t=document.querySelector('.nav-toggle'), m=document.querySelector('.menu'); if(t&&m) t.addEventListener('click',()=>m.classList.toggle('open'));
+// Typewriter
+const typeEl=document.querySelector('.type');
+if(typeEl){
+  const text=typeEl.dataset.text||"";
+  let i=0; const speed=22;
+  const tick=()=>{
+    typeEl.textContent=text.slice(0,i)+"█"; // cursor
+    i++; if(i<=text.length){ requestAnimationFrame(()=>setTimeout(tick,speed)); }
+    else{ typeEl.textContent=text; }
+  };
+  setTimeout(tick,400);
 }
-
-// Reveal on scroll
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.style.opacity = 1;
-      e.target.style.transform = 'none';
-      observer.unobserve(e.target);
-    }
-  })
-}, {threshold:.15});
-
-document.querySelectorAll('.card, .prose, .media, .page-hero').forEach(el=>{
-  el.style.opacity=.001;
-  el.style.transform='translateY(10px)';
-  el.style.transition='opacity .5s ease, transform .5s ease';
-  observer.observe(el);
-});
+// Parallax rings
+const rings=document.querySelectorAll('.rings .ring');
+window.addEventListener('mousemove',(e)=>{
+  const x=(e.clientX/window.innerWidth-.5)*6;
+  const y=(e.clientY/window.innerHeight-.5)*6;
+  rings.forEach((r,i)=>{ r.style.transform=`translate(${x*(i+1)}px,${y*(i+1)}px)`; });
+},{passive:true});

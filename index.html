@@ -5,97 +5,114 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
-<meta name="description" content="Nexus Projekt – SCP:RP Community mit Ambition. Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
+<meta name="description" content="Nexus Projekt – SCP:RP mit Ambition. Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
 <meta property="og:title" content="Nexus Projekt">
 <meta property="og:description" content="Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
-<meta property="og:image" content="assets/img/logo_primary.png">
-<link rel="icon" href="assets/img/logo_x.png" type="image/png">
+<meta property="og:image" content="assets/img/logo_wordmark_white.png">
+<link rel="icon" href="assets/img/logo_x_orange.png" type="image/png">
 <link rel="preload" href="assets/fonts/Nexus-Font.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 <script defer src="assets/js/app.js"></script>
 
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="index.html" aria-label="Nexus Projekt Home">
-    <img src="assets/img/logo_primary.png" alt="Nexus Projekt Logo">
-  </a>
-  <button class="nav-toggle" aria-label="Navigation umschalten">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">Über uns</a>
-    <a href="projects.html">Projekte</a>
-    <a href="community.html">Community</a>
-    <a href="apply.html">Bewerben</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
+<div class="bg grid"></div>
+<div class="bg scan"></div>
+
+<header class="shell hdr">
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Start">
+      <img src="assets/img/logo_wordmark_x_white.png" alt="NEXUS" height="20">
+    </a>
+    <button class="nav-toggle" aria-label="Navigation umschalten"><span></span><span></span><span></span></button>
+    <nav class="menu" aria-label="Hauptnavigation">
+      <a href="about.html">Über</a>
+      <a href="projects.html">Projekte</a>
+      <a href="community.html">Community</a>
+      <a href="apply.html">Bewerben</a>
+      <a class="pill" href="contact.html">Kontakt</a>
+    </nav>
+  </div>
 </header>
 
+
 <main class="hero">
-  <div class="hero-bg">
-    <img src="assets/img/logo_ring.svg" alt="" class="ring ring-1" aria-hidden="true">
-    <img src="assets/img/logo_ring.svg" alt="" class="ring ring-2" aria-hidden="true">
-    <img src="assets/img/logo_ring.svg" alt="" class="ring ring-3" aria-hidden="true">
+  <div class="rings" aria-hidden="true">
+    <img src="assets/img/ring.svg" class="ring a" alt="">
+    <img src="assets/img/ring.svg" class="ring b" alt="">
+    <img src="assets/img/ring.svg" class="ring c" alt="">
   </div>
-  <div class="hero-content container">
-    <h1><span class="accent">NEX</span>US PROJEKT</h1>
-    <p class="subtitle">SCP:RP — und mehr. Custom Map. Custom Scripts. Eigene Konzepte.</p>
-    <p class="quote">„Wir bauen nicht nur Welten, wir definieren ihre Regeln.“</p>
+  <div class="shell hero-inner">
+    <img class="hero-logo shine" src="assets/img/logo_wordmark_white.png" alt="NEXUS">
+    <p class="hero-sub">SCP:RP • Custom Map • Custom Scripts • Eigene Konzepte</p>
+    <p class="type" data-text="Wir bauen nicht nur Welten, wir definieren ihre Regeln."></p>
     <div class="cta">
-      <a class="btn btn-primary" href="community.html">Community beitreten</a>
-      <a class="btn btn-ghost" href="projects.html">Unsere Projekte</a>
+      <a class="btn primary" href="community.html">Community</a>
+      <a class="btn ghost" href="projects.html">Roadmap</a>
     </div>
   </div>
 </main>
 
-<section class="features container">
-  <article class="card">
-    <h3>Vision</h3>
-    <p>Nexus ist mehr als ein SCP:RP-Server. Wir erschaffen eine Plattform, auf der Ideen wachsen und Spieler:innen gehört werden.</p>
+<section class="shell kpi">
+  <div class="tile">
+    <span class="label">Sektoren</span>
+    <span class="value">IV+</span>
+  </div>
+  <div class="tile">
+    <span class="label">TPS Ziel</span>
+    <span class="value">66</span>
+  </div>
+  <div class="tile">
+    <span class="label">Focus</span>
+    <span class="value">Lesbarkeit</span>
+  </div>
+</section>
+
+<section class="shell features">
+  <article class="panel tilt">
+    <h3>Framework</h3>
+    <p>Lua-Module für Rollen, Sicherheitsebenen, Wirtschaft – mit klaren Schnittstellen.</p>
   </article>
-  <article class="card">
-    <h3>Tech</h3>
-    <p>Eigenentwickelte Systeme, performante Skripte und eine eigens kuratierte Map — gebaut für Lesbarkeit und Performance.</p>
+  <article class="panel tilt">
+    <h3>Map-Design</h3>
+    <p>Modulare Anlage, logische Wegeführung, Performance-Streaming, SCP-Containment.</p>
   </article>
-  <article class="card">
+  <article class="panel tilt">
     <h3>Community</h3>
-    <p>Ein Ort, an dem Feedback zählt und jede Stimme wichtig ist. Werde Teil unseres Projekts.</p>
+    <p>Votes, Playtests, offene Issues. Du prägst die Regeln, nicht nur die Welt.</p>
   </article>
 </section>
 
-<section class="container grid-2">
-  <div>
-    <h2>Was ist Nexus Projekt?</h2>
-    <p>Nexus Projekt ist ein Vorhaben, die Garrysmod-Szene neu strahlen zu lassen. Wir kombinieren technisches Know-how mit kreativen Konzepten und einem klaren Qualitätsanspruch.</p>
+<section class="shell timeline">
+  <div class="row">
+    <span class="dot"></span>
+    <div class="content">
+      <h4>Q1 — Prototyp</h4>
+      <p>Core-Systems, Rollenmatrix, Basis-Map-Blockout.</p>
+    </div>
   </div>
-  <div class="media">
-    <img src="assets/img/logo_primary.png" alt="Nexus Logo groß">
+  <div class="row">
+    <span class="dot"></span>
+    <div class="content">
+      <h4>Q2 — Vertical Slice</h4>
+      <p>Containment-Loop, Terminals, Missionen, CI/MTF-Drills.</p>
+    </div>
+  </div>
+  <div class="row">
+    <span class="dot"></span>
+    <div class="content">
+      <h4>Q3 — Public Tests</h4>
+      <p>Playtests, Balancing, Dokumentation, Hardening.</p>
+    </div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="grid">
-    <div>
-      <h4>Nexus Projekt</h4>
-      <p>Wir bauen nicht nur Welten, wir definieren ihre Regeln.</p>
-    </div>
-    <div>
-      <h4>Links</h4>
-      <ul>
-        <li><a href="privacy.html">Datenschutz</a></li>
-        <li><a href="imprint.html">Impressum</a></li>
-        <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
-        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Kontakt</h4>
-      <p>E-Mail: team@nexus-projekt.dev</p>
-    </div>
+<footer class="footer">
+  <div class="shell fgrid">
+    <p>© <span id="year"></span> Nexus Projekt</p>
+    <p><a href="privacy.html">Datenschutz</a> · <a href="imprint.html">Impressum</a></p>
+    <p><a href="https://discord.com" target="_blank" rel="noopener">Discord</a> · <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
   </div>
-  <p class="copy">© <span id="year"></span> Nexus Projekt — Alle Rechte vorbehalten.</p>
 </footer>
 
 </body>
