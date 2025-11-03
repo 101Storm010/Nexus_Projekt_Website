@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Kontakt — Nexus Projekt</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Nexus Projekt – SCP:RP Community mit Ambition. Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
+<meta property="og:title" content="Nexus Projekt">
+<meta property="og:description" content="Wir bauen nicht nur Welten, wir definieren ihre Regeln.">
+<meta property="og:image" content="assets/img/logo_primary.png">
+<link rel="icon" href="assets/img/logo_x.png" type="image/png">
+<link rel="preload" href="assets/fonts/Nexus-Font.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/app.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Nexus Projekt Home">
+    <img src="assets/img/logo_primary.png" alt="Nexus Projekt Logo">
+  </a>
+  <button class="nav-toggle" aria-label="Navigation umschalten">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">Über uns</a>
+    <a href="projects.html">Projekte</a>
+    <a href="community.html">Community</a>
+    <a href="apply.html">Bewerben</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+</header>
+
+<main class="page-hero">
+  <h1>Kontakt</h1>
+  <p>Fragen? Ideen? Schreib uns.</p>
+</main>
+<section class="container grid-2">
+  <form class="form" name="contact" method="post" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <label>E-Mail
+      <input required type="email" name="email" placeholder="you@example.com">
+    </label>
+    <label>Nachricht
+      <textarea name="message" rows="6" placeholder="Worum geht's?"></textarea>
+    </label>
+    <button class="btn btn-primary" type="submit">Senden</button>
+  </form>
+  <div class="prose">
+    <h3>Weitere Kanäle</h3>
+    <ul>
+      <li>Discord: <a href="https://discord.com" target="_blank" rel="noopener">Nexus Projekt</a></li>
+      <li>GitHub: <a href="https://github.com" target="_blank" rel="noopener">/nexus-projekt</a></li>
+    </ul>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="grid">
+    <div>
+      <h4>Nexus Projekt</h4>
+      <p>Wir bauen nicht nur Welten, wir definieren ihre Regeln.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="imprint.html">Impressum</a></li>
+        <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p>E-Mail: team@nexus-projekt.dev</p>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> Nexus Projekt — Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
