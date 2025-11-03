@@ -1,0 +1,13 @@
+X, und Kreis:
+HEX: #faa03c
+RGB Dezimal: 250, 160, 60 
+
+Hintergrund:
+HEX: #000000
+RGB Dezimal: 0, 0, 0 
+
+Text:
+HEX: #ffffff
+RGB Dezimal: 255, 255, 255 
+
+
